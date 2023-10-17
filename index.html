@@ -149,13 +149,15 @@
 
     <ul class="nav justify-content-center">
       <li class="nav-item">
-        <a class="nav-link active" aria-current="page" href="#">About Me</a>
+        <a class="nav-link active" aria-current="page" href="#aboutme"
+          >About Me</a
+        >
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Projects</a>
+        <a class="nav-link" href="#projects">Projects</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Contact</a>
+        <a class="nav-link" href="#skills">Skills</a>
       </li>
     </ul>
 
@@ -201,11 +203,9 @@
         <div class="d-inline-flex gap-2 mb-5">
           <button
             class="d-inline-flex align-items-center btn btn-primary btn-lg px-4 rounded-pill"
-            type="button"
-          >
-            View my Projects
+            type="button">
+            <a href="#projects"> View my Projects </a>
             <svg class="bi ms-2" width="24" height="24">
-              <a href="projects"></a>
               <use xlink:href="#arrow-right-short" />
             </svg>
           </button>
@@ -215,15 +215,23 @@
 
     <div class="b-example-divider"></div>
 
-    <div class="my-5 aboutme">
-      <div class="p-5 text-center bg-body-tertiary">
-        <div class="container py-5">
-          <h1 class="text-body-emphasis">About Me</h1>
-          <p class="col-lg-8 mx-auto lead">
-            I am a Junior Developer, working in Front-End Development. Using
-            Javascript and Python, I am looking to advance into Software
-            Development in the Longterm.
-          </p>
+    <div class="my-5">
+      <div id="aboutme">
+        <div class="p-5 text-center bg-body-tertiary">
+          <div class="container py-5">
+            <h1 class="text-body-emphasis">About Me & Contact</h1>
+            <p class="col-lg-8 mx-auto lead">
+              I am a Junior Developer, working in Front-End Development. Using
+              Javascript and Python, I am looking to advance into Software
+              Development in the Longterm.
+            </p>
+            <p>
+              <a href="https://github.com/DanielHarding1">GitHub</a>
+            </p>
+            <p>
+              <a href="mailto:danielharding2008@gmail.com">Email</a>
+            </p>
+          </div>
         </div>
       </div>
     </div>
@@ -231,37 +239,103 @@
     <div class="b-example-divider"></div>
 
     <div class="my-5">
-      <div class="p-5 text-center bg-body-tertiary">
-        <div class="container py-5">
-          <h1 class="text-body-emphasis">Projects</h1>
-          <p class="col-lg-8 mx-auto lead">
-            This takes the basic jumbotron above and makes its background
-            edge-to-edge with a <code>.container</code> inside to align content.
-            Similar to above, it's been recreated with built-in grid and utility
-            classes.
-          </p>
-          <div class="card-stack"></div>
-          <div class="card" style="width: 32rem">
-            <img class="card-img-top" src="..." alt="Card image cap" />
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+      <div id="projects">
+        <div class="p-5 text-center bg-body-tertiary">
+          <div class="container py-5">
+            <h1 class="text-body-emphasis">Projects</h1>
+            <p class="col-lg-8 mx-auto lead">
+              These are some of the project I am looking to undertake within the
+              next two years, some can be done much sooner but it is important
+              to define long term aims.
+            </p>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+              <div class="col">
+                <div class="card h-100">
+                  <img
+                    src="../Bootstrap_Portfolio/images/full stack.png"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Full Stack Development</h5>
+                    <p class="card-text">
+                      This Project will take the longest however i am dedicated
+                      to making this dream a reality in the coming years.
+                    </p>
+                  </div>
+                  <div class="card-footer">
+                    <small class="text-body-secondary"
+                      >Last updated 3 mins ago</small
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <img
+                    src="../Bootstrap_Portfolio/images/node js.png"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Node.JS</h5>
+                    <p class="card-text">
+                      Node.JS can be a great stepping stone, from using
+                      Javascript in Bootcamp to applying JS to a full stack
+                      vision.
+                    </p>
+                  </div>
+                  <div class="card-footer">
+                    <small class="text-body-secondary"
+                      >Last updated 3 mins ago</small
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <img
+                    src="../Bootstrap_Portfolio/images/Weather_iOS_15.webp"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Weather App</h5>
+                    <p class="card-text">
+                      A weather App will give me intial understanding of using
+                      API's to track and retrive data from servers for my
+                      website. This is aimed to be completed within the next
+                      couple of weeks.
+                    </p>
+                  </div>
+                  <div class="card-footer">
+                    <small class="text-body-secondary"
+                      >Last updated 3 mins ago</small
+                    >
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="card" style="width: 32rem">
-            <img class="card-img-top" src="..." alt="Card image cap" />
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
+        </div>
+      </div>
+    </div>
+
+    <br />
+    <br />
+
+    <div class="b-example-divider"></div>
+
+    <div class="my-5">
+      <div id="skills">
+        <div class="p-5 text-center bg-body-tertiary">
+          <div class="container py-5">
+            <h1 class="text-body-emphasis">Skills</h1>
+            <p class="col-lg-8 mx-auto lead">
+              I am a recent Economics Graduate. I gained skills in analytics and
+              many key soft skills that i can apply to my career as a Software
+              Developer
+            </p>
           </div>
         </div>
       </div>
@@ -269,17 +343,17 @@
 
     <div class="b-example-divider"></div>
 
-    <div class="container my-5">
-      <div class="p-5 text-center bg-body-tertiary rounded-3">
-        <h1 class="text-body-emphasis">Basic jumbotron</h1>
-        <p class="lead">
-          This is a simple Bootstrap jumbotron that sits within a
-          <code>.container</code>, recreated with built-in utility classes.
-        </p>
-      </div>
-    </div>
 
-    <div class="b-example-divider"></div>
+    <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+          <div class="col-md-4 d-flex align-items-center">
+            <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+              <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"/></svg>
+            </a>
+            <span class="mb-3 mb-md-0 text-body-secondary">&copy; DFH Development LTD</span>
+          </div>
+
+ 
     <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
